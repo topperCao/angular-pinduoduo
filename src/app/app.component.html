@@ -1,0 +1,11 @@
+<!--
+  路由显示的内容是插入到 router-outlet 的同级的下方节点
+  而不是在 router-outlet 中包含
+-->
+<router-outlet></router-outlet>
+<app-footer
+  (tabSelected)="handleTabSelect($event)"
+  [selectedIndex]="selectedIndex$ | async"
+></app-footer>
+<div id="overlay" class="hidden" (click)="removeDialog()"></div>
+<div id="dialog-container" class="hidden"></div>

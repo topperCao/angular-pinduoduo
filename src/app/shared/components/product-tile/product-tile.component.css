@@ -1,0 +1,46 @@
+:host {
+  padding: 0 0.5rem;
+  background-color: #fff;
+}
+.container {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: repeat(auto-fill, minmax(11rem, 1fr));
+  grid-gap: 5px;
+  place-content: stretch;
+  place-items: start;
+}
+.product-image {
+  object-fit: contain;
+  width: 11rem;
+  height: 11rem;
+}
+.product-title {
+  width: 100%;
+  font-size: 0.8rem;
+}
+.product-price {
+  width: 100%;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(3, auto);
+  place-content: stretch;
+  place-items: center;
+}
+.product-tags > span {
+  margin-right: 5px;
+}
+.price-section {
+  color: #d24749;
+  margin: 0;
+}
+.price-desc {
+  color: #3f3f3f;
+  font-size: 0.7rem;
+  width: 100%;
+}
+.price {
+  display: inline;
+  font-size: 0.9rem;
+  padding: 0;
+}

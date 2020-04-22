@@ -1,0 +1,53 @@
+@baseUrl=https://jsonplaceholder.typicode.com
+
+###
+
+GET {{baseUrl}}/posts HTTP/1.1
+
+###
+GET {{baseUrl}}/posts/1 HTTP/1.1
+
+
+###
+POST {{baseUrl}}/posts HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "这是一个测试帖子的标题",
+    "body": "这是一个测试的内容",
+    "userId": 1
+}
+
+###
+PUT {{baseUrl}}/posts/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "这是一个测试帖子的标题",
+    "body": "这是一个测试的内容",
+    "userId": 1
+}
+
+###
+DELETE {{baseUrl}}/posts/1 HTTP/1.1
+
+###
+GET {{host}}/banners?icode={{iCode}} HTTP/1.1
+
+###
+GET {{host}}/tabs?icode={{iCode}} HTTP/1.1
+
+###
+GET {{host}}/channels?icode={{iCode}} HTTP/1.1
+
+###
+GET {{host}}/ads?categories_like=men&icode={{iCode}} HTTP/1.1
+
+###
+GET {{host}}/products?categories_like=men&icode={{iCode}} HTTP/1.1
+
+###
+GET {{host}}/productVariants?_expand=product&_embed=productVariantImages&productId=1&icode={{iCode}} HTTP/1.1
+
+###
+GET {{host}}/profile?icode={{iCode}} HTTP/1.1

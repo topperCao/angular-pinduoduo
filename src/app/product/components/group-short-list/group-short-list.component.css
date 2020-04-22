@@ -1,0 +1,19 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.title {
+  margin: 0 0.5rem 0 1rem;
+  color: #3f3f3f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title img {
+  width: 2rem;
+  height: 2rem;
+}
+.container {
+  background-color: #fff;
+}

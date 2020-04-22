@@ -1,0 +1,28 @@
+.container {
+  background-color: #fff;
+  padding: 5px 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  display: grid;
+  place-content: stretch;
+  place-items: center;
+  grid-gap: 0.4rem;
+  grid-auto-flow: row;
+}
+.underline {
+  width: 20%;
+  height: 2px;
+  background-color: #f5f5f5;
+  margin: 0 auto;
+}
+.underline > .highlight {
+  width: 50%;
+  height: 2px;
+  background-color: #e02f29;
+  padding: 0;
+}
+.container::-webkit-scrollbar {
+  display: none !important;
+}
